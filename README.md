@@ -70,3 +70,11 @@ services:
 - **3888:** Lider seçimi gibi yüksek öncelikli işlemler için kullanılır.
 - **2181 Portu:** ZooKeeper'ın istemci bağlantılarını dinlediği standart porttur.
 - **Container Adı:** Her bir ZooKeeper düğümü için farklı bir container adı tanımlanır.
+
+compose.yml dosyasının olduğu folder'da aşağıdaki komut çalıştırılarak zookeeper kurulumu sağlanır.
+```bash
+docker-compose up -d
+```
+Kurulum tamamlandığında aşağıdaki gibi zookeeper nodlarının kurulduğu görülmelidir.
+
+<img src="/Assets/images/compose-up.png" alt="compose up" width="50%">
