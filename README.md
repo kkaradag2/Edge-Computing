@@ -77,4 +77,4 @@ docker-compose up -d
 ```
 Kurulum tamamlandığında aşağıdaki gibi zookeeper nodlarının kurulduğu görülmelidir.
 
-<img src="/Assets/images/compose-up.png" alt="compose up" width="50%">
+<img src="/Assets/images/compose-up.png" alt="compose up" width="80%">
