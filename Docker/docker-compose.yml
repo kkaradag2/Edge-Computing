@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  # ZooKeeper'ın birinci düğümü (Leader olabilir)
+  zookeeper1:
+    image: zookeeper  # ZooKeeper Docker imajını kullan
+    container_name: zookeeper1  # Konteyner adı
+    ports:
+      - "2181:2181"  # ZooKeeper'ın dinleyeceği standart port
+    environment:  # ZooKeeper'ın çalışma ortamı değişkenleri
+      ZOO_MY_ID: 1  # Bu düğümün kimliği (1. düğüm)
+      ZOO_SERVERS:  # ZooKeeper cluster'daki tüm düğümler
+        server.1=zookeeper1:2888:3888
+        server.2=zookeeper2:2888:3888
+        server.3=zookeeper3:2888:3888
+
+  # ZooKeeper'ın ikinci düğümü (Follower olabilir)
+  zookeeper2:
+    image: zookeeper  # ZooKeeper Docker imajını kullan
+    container_name: zookeeper2  # Konteyner adı
+    environment:  # Çalışma ortamı değişkenleri
+      ZOO_MY_ID: 2  # Bu düğümün kimliği (2. düğüm)
+      ZOO_SERVERS:  # ZooKeeper cluster'daki tüm düğümler
+        server.1=zookeeper1:2888:3888
+        server.2=zookeeper2:2888:3888
+        server.3=zookeeper3:2888:3888
+
+  # ZooKeeper'ın üçüncü düğümü (Follower olabilir)
+  zookeeper3:
+    image: zookeeper  # ZooKeeper Docker imajını kullan
+    container_name: zookeeper3  # Konteyner adı
+    environment:  # Çalışma ortamı değişkenleri
+      ZOO_MY_ID: 3  # Bu düğümün kimliği (3. düğüm)
+      ZOO_SERVERS:  # ZooKeeper cluster'daki tüm düğümler
+        server.1=zookeeper1:2888:3888
+        server.2=zookeeper2:2888:3888
+        server.3=zookeeper3:2888:3888
