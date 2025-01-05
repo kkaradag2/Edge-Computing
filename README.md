@@ -19,7 +19,7 @@ Sistem healty durumlarındaki değişimleri  Prometheus  ve Grafana ile geriye d
 
 ## **Topoloji**
 
-<img src="/Assets/images/Topoloji.png" alt="Sistem Topolojisi" width="50%">
+<img src="/Assets/images/Topoloji.png" alt="Sistem Topolojisi" width="70%">
 
 ## **Docker-Compose**
 
