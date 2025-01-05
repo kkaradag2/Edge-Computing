@@ -12,4 +12,4 @@ Bu proje, ZooKeeper kullanarak edge computing ortamlarında gerçek zamanlı bir
 
 ## **Topoloji**
 
-[Sistem Topolojisi] [/Assets/images/Topoloji.png]
+<img src="/Assets/images/Topoloji.png" alt="Sistem Topolojisi" width="50%">
