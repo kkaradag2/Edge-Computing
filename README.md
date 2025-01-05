@@ -10,6 +10,13 @@ Bu proje, ZooKeeper kullanarak edge computing ortamlarında gerçek zamanlı bir
 - Hata Yönetimi: ZooKeeper’ın izleme (watch) mekanizmasıyla anormal durumları algılayarak event tetiklemek ve Event Manager üzerinden sıkıntılı Edge noktasını configurasyon versinden çıkararak yeni istekleri almasına izin vermemek. Düzelme durumlarında tekrar configurasyon verisine iyileşen node düğümünü eklemek.
 - Tutarlılık ve Performans Dengesi: Tutarlılığı korurken, ölçeklenebilir ve yüksek performanslı bir çözüm sunmak.
 
+## **Projenin Uygulanması İçin Planlanan Ortam**
+Docker Desktop üzerinde bir ZooKeeper cluster oluşturacağım. Edge node olarak basit bir uygulama yazmayı planlıyorum. Bu uygulama, 0-100 arasında rastgele oluşturulan CPU ve bellek (memory) bilgilerini ZooKeeper’a gönderecek. ZooKeeper, Event Manager ile birlikte çalışarak belirli eşik değerlerinin (örneğin, %80 CPU ve bellek kullanımı) aşılması durumunda, bu edge düğümüne client isteklerinin yönlendirilmesini engelleyecek. (Configurasyon bilgisi olarak client'a verilmeyecek)
+
+Client’lar, uygun yapılandırmayı ZooKeeper’dan öğrenecek ve isteklerini uygun edge düğümüne gönderecek. Ayrıca, ZooKeeper’ın watch mekanizması sayesinde durumu düzelen edge düğümünden client’lar haberdar olacak ve bu düğüme tekrar istek göndermeye başlayabilecek.
+
+Sistem healty durumlarındaki değişimleri  Prometheus  ve Grafana ile geriye dönük izlenebilirlik sağlamayı düşüyorum.
+
 ## **Topoloji**
 
 <img src="/Assets/images/Topoloji.png" alt="Sistem Topolojisi" width="50%">
