@@ -11,11 +11,11 @@ Bu proje, ZooKeeper kullanarak edge computing ortamlarında gerçek zamanlı bir
 - Tutarlılık ve Performans Dengesi: Tutarlılığı korurken, ölçeklenebilir ve yüksek performanslı bir çözüm sunmak.
 
 ## **Projenin Uygulanması İçin Planlanan Ortam**
-Docker Desktop üzerinde bir ZooKeeper cluster oluşturacağım. Edge node olarak basit bir uygulama yazmayı planlıyorum. Bu uygulama, 0-100 arasında rastgele oluşturulan CPU ve bellek (memory) bilgilerini ZooKeeper’a gönderecek. ZooKeeper, Event Manager ile birlikte çalışarak belirli eşik değerlerinin (örneğin, %80 CPU ve bellek kullanımı) aşılması durumunda, bu edge düğümüne client isteklerinin yönlendirilmesini engelleyecek. (Configurasyon bilgisi olarak client'a verilmeyecek)
+Docker Desktop üzerinde bir ZooKeeper cluster oluşturulacak. Edge node olarak basit bir uygulama yazılacak. Bu uygulama, 0-100 arasında rastgele oluşturulan CPU ve bellek (memory) bilgilerini ZooKeeper’a gönderecek. ZooKeeper, Event Manager ile birlikte çalışarak belirli eşik değerlerinin (örneğin, %80 CPU ve bellek kullanımı) aşılması durumunda, bu edge düğümüne client isteklerinin yönlendirilmesini engelleyecek. (Configurasyon bilgisi olarak client'a verilmeyecek)
 
 Client’lar, uygun yapılandırmayı ZooKeeper’dan öğrenecek ve isteklerini uygun edge düğümüne gönderecek. Ayrıca, ZooKeeper’ın watch mekanizması sayesinde durumu düzelen edge düğümünden client’lar haberdar olacak ve bu düğüme tekrar istek göndermeye başlayabilecek.
 
-Sistem healty durumlarındaki değişimleri  Prometheus  ve Grafana ile geriye dönük izlenebilirlik sağlamayı düşüyorum.
+Sistem healty durumlarındaki değişimleri  Prometheus  ve Grafana ile geriye dönük izlenebilirlik sağlanacak.
 
 ## **Topoloji**
 
