@@ -56,6 +56,10 @@ services:
         server.1=zookeeper1:2888:3888
         server.2=zookeeper2:2888:3888
         server.3=zookeeper3:2888:3888
-
-
 ```
+- **ZOO_MY_ID:** Her ZooKeeper düğümünün kimliğini belirtir. Bu, cluster'daki rolleri (leader veya follower) tanımlamak için kullanılır.
+- **ZOO_SERVERS:** Cluster içindeki diğer ZooKeeper düğümlerini tanımlar. Her düğümün adresi ve portları burada listelenir.
+- **2888:** Diğer düğümlerle iletişim için kullanılır.
+- **3888:** Lider seçimi gibi yüksek öncelikli işlemler için kullanılır.
+- **2181 Portu:** ZooKeeper'ın istemci bağlantılarını dinlediği standart porttur.
+- **Container Adı:** Her bir ZooKeeper düğümü için farklı bir container adı tanımlanır.
