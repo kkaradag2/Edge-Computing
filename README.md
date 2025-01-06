@@ -79,7 +79,26 @@ Kurulum tamamlandığında aşağıdaki gibi zookeeper nodlarının kurulduğu g
 
 <img src="/Assets/images/compose-up.png" alt="compose up" width="80%">
 
-## **Edge Projesini Eklenmesi**
-Bir .NET Core API projesi Edge düğümlerini taklit ediebilmesi için projeye eklendi. Default gelen bu proje için Dockerfile düenlemesi yapıalrak compose dosyası içersinden çalışır hale getirlmesi sağlandı. Proje docker üzerinden 8080, 8085, 8090 ve 8095 portları üzerindne hizmet verecek şekilde ayarlandı.
+## **Edge Projesinin Eklenmesi ve Yapılandırılması**
+Proje kapsamında, bir .NET Core API uygulaması geliştirilerek Edge düğümlerini taklit edebilmesi sağlandı. Bu uygulama, dağıtık mimarilerde düğüm bazlı hizmetleri simüle etmek için tasarlandı ve Docker tabanlı bir ortamda çalıştırılacak şekilde yapılandırıldı.
+
+## Yapılan Çalışmalar
+
+- Proje Eklemesi:
+Edge düğümlerini temsil etmek üzere yeni bir API projesi oluşturuldu. Bu proje, düğümlerin temel işlevlerini taklit eden servisler içermektedir.
+
+- Dockerfile Düzenlemeleri:
+Projenin konteynerize edilmesi için gerekli olan Dockerfile oluşturuldu ve yapılandırıldı.
+Dockerfile, uygulamanın bağımlılıklarını çözerek gerekli derlemeleri tamamladıktan sonra, çalıştırılabilir bir imaj oluşturacak şekilde ayarlandı.
+
+- Docker Compose Entegrasyonu:
+Docker Compose dosyasına gerekli servis tanımlamaları eklendi.
+Projenin birden fazla düğüm olarak çalıştırılabilmesi için bağımsız portlar ve ortam değişkenleri tanımlandı.
+- Port Ayarları:
+Uygulama, Docker üzerinden aşağıdaki portlar üzerinden hizmet verecek şekilde ayarlandı:
+8080, 8085, 8090, 8095
+Her bir port, farklı bir düğümün hizmet vermesi için izole edildi ve böylece çoklu node çalıştırma senaryoları desteklendi.
+
+Yapılan bu düzenlemeler sayesinde, Edge düğümlerini temsil eden API uygulaması, hem yerel geliştirme ortamlarında hem de Docker tabanlı üretim sistemlerinde kolayca çalıştırılabilir hale geldi. Bu yapılandırma, farklı senaryolar için esnek bir test ortamı sunmakta ve dağıtık sistemlerin mimarisini simüle etme olanağı sağlamaktadır.
 
 <img src="/Assets/images/Edges.png" alt="compose up" width="80%">
