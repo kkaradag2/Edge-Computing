@@ -35,6 +35,7 @@ services:
         server.1=zookeeper1:2888:3888
         server.2=zookeeper2:2888:3888
         server.3=zookeeper3:2888:3888
+
   edge1:
     build:
       context: .
@@ -56,5 +57,29 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://+:8085 # Container içi port
+    volumes:
+      - ./Edge:/app/release
+
+  edge3:
+    build:
+      context: .
+      dockerfile: Edge/Dockerfile
+    ports:
+      - "8090:8090" # Host 8090 -> Container 8090
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:8090 # Container içi port
+    volumes:
+      - ./Edge:/app/release
+
+  edge4:
+    build:
+      context: .
+      dockerfile: Edge/Dockerfile
+    ports:
+      - "8095:8095" # Host 8095 -> Container 8095
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:8095 # Container içi port
     volumes:
       - ./Edge:/app/release
