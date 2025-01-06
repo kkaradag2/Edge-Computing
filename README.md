@@ -80,12 +80,12 @@ Kurulum tamamlandığında aşağıdaki gibi zookeeper nodlarının kurulduğu g
 <img src="/Assets/images/compose-up.png" alt="compose up" width="80%">
 
 ## **Edge Projesinin Eklenmesi ve Yapılandırılması**
-Proje kapsamında, bir .NET Core API uygulaması geliştirilerek Edge düğümlerini taklit edebilmesi sağlandı. Bu uygulama, dağıtık mimarilerde düğüm bazlı hizmetleri simüle etmek için tasarlandı ve Docker tabanlı bir ortamda çalıştırılacak şekilde yapılandırıldı.
+Proje kapsamında, bir temel seviyede bir .NET Core API uygulaması ileride Edge düğümlerini taklit edebilmesi için çözüme eklendi. Bu uygulama, dağıtık mimarilerde düğüm bazlı hizmetleri simüle etmek için tasarlandı ve Docker tabanlı bir ortamda çalıştırılacak şekilde yapılandırıldı.
 
 ## Yapılan Çalışmalar
 
 - Proje Eklemesi:
-Edge düğümlerini temsil etmek üzere yeni bir API projesi oluşturuldu. Bu proje, düğümlerin temel işlevlerini taklit eden servisler içermektedir.
+Edge düğümlerini temsil etmek üzere yeni bir API projesi oluşturuldu. Temel seviyede bir .NET Core projesi olduğu için havadurumu servisini veren bir API ile birlikte geldi. Bu projeye ileride zookeper nodlarına CPU ve RAM değerlerini gönderecek yapı kurulacak. Bu aşamada sadece Docker desktop üzerinde 4 adet node olarak çalışabilecek bir kod eklemiş oldu.
 
 - Dockerfile Düzenlemeleri:
 Projenin konteynerize edilmesi için gerekli olan Dockerfile oluşturuldu ve yapılandırıldı.
@@ -94,6 +94,7 @@ Dockerfile, uygulamanın bağımlılıklarını çözerek gerekli derlemeleri ta
 - Docker Compose Entegrasyonu:
 Docker Compose dosyasına gerekli servis tanımlamaları eklendi.
 Projenin birden fazla düğüm olarak çalıştırılabilmesi için bağımsız portlar ve ortam değişkenleri tanımlandı.
+
 - Port Ayarları:
 Uygulama, Docker üzerinden aşağıdaki portlar üzerinden hizmet verecek şekilde ayarlandı:
 8080, 8085, 8090, 8095
