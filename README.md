@@ -82,4 +82,4 @@ Kurulum tamamlandığında aşağıdaki gibi zookeeper nodlarının kurulduğu g
 ## ** Edge Projesini Eklenmesi **
 Bir .NET Core API projesi Edge düğümlerini taklit ediebilmesi için projeye eklendi. Default gelen bu proje için Dockerfile düenlemesi yapıalrak compose dosyası içersinden çalışır hale getirlmesi sağlandı. Proje docker üzerinden 8080, 8085, 8090 ve 8095 portları üzerindne hizmet verecek şekilde ayarlandı.
 
-<img src="/Assets/images/edges.png" alt="compose up" width="80%">
+<img src="/Assets/images/Edges.png" alt="compose up" width="80%">
