@@ -1,1 +1,10 @@
 Edge/obj/Container/
+Edge/.vs
+Edge/.vs/*
+Edge/bin/
+Edge/obj/
+Edge/Container/bin/
+Edge/Container/obj/
+Edge/Container/Properties/
+Edge/Properties/
+Edge/app
