@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Edge")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+064112febce522f1fd3000e283dc5367f195c366")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d0a517b674a072d87fccc657c882ff526675c6b4")]
 [assembly: System.Reflection.AssemblyProductAttribute("Edge")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Edge")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

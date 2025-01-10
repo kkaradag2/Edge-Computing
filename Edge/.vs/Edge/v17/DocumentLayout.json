@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Projects\\YediTepe\\DS\\Edge Computing\\Edge\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{21A0F71B-48FE-4398-A91F-623E2DED083C}|Edge.csproj|c:\\projects\\yeditepe\\ds\\edge computing\\edge\\services\\timedbackgroundservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21A0F71B-48FE-4398-A91F-623E2DED083C}|Edge.csproj|solutionrelative:services\\timedbackgroundservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{21A0F71B-48FE-4398-A91F-623E2DED083C}|Edge.csproj|c:\\projects\\yeditepe\\ds\\edge computing\\edge\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21A0F71B-48FE-4398-A91F-623E2DED083C}|Edge.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21A0F71B-48FE-4398-A91F-623E2DED083C}|Edge.csproj|c:\\projects\\yeditepe\\ds\\edge computing\\edge\\services\\zookeeperservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21A0F71B-48FE-4398-A91F-623E2DED083C}|Edge.csproj|solutionrelative:services\\zookeeperservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{21A0F71B-48FE-4398-A91F-623E2DED083C}|Edge.csproj|c:\\projects\\yeditepe\\ds\\edge computing\\edge\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{21A0F71B-48FE-4398-A91F-623E2DED083C}|Edge.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{21A0F71B-48FE-4398-A91F-623E2DED083C}|Edge.csproj|c:\\projects\\yeditepe\\ds\\edge computing\\edge\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21A0F71B-48FE-4398-A91F-623E2DED083C}|Edge.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{21A0F71B-48FE-4398-A91F-623E2DED083C}|Edge.csproj|c:\\projects\\yeditepe\\ds\\edge computing\\edge\\services\\izookeeperservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21A0F71B-48FE-4398-A91F-623E2DED083C}|Edge.csproj|solutionrelative:services\\izookeeperservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,41 +30,54 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Projects\\YediTepe\\DS\\Edge Computing\\Edge\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
               "ToolTip": "C:\\Projects\\YediTepe\\DS\\Edge Computing\\Edge\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-01-10T09:11:04.609Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "ZookeeperService.cs",
+              "DocumentMoniker": "C:\\Projects\\YediTepe\\DS\\Edge Computing\\Edge\\Services\\ZookeeperService.cs",
+              "RelativeDocumentMoniker": "Services\\ZookeeperService.cs",
+              "ToolTip": "C:\\Projects\\YediTepe\\DS\\Edge Computing\\Edge\\Services\\ZookeeperService.cs",
+              "RelativeToolTip": "Services\\ZookeeperService.cs",
+              "ViewState": "AgIAAHcAAAAAAAAAAAAAwEAAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T09:56:03.198Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Projects\\YediTepe\\DS\\Edge Computing\\Edge\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Projects\\YediTepe\\DS\\Edge Computing\\Edge\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAEYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-08T21:09:50.425Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TimedBackgroundService.cs",
-              "DocumentMoniker": "C:\\Projects\\YediTepe\\DS\\Edge Computing\\Edge\\Services\\TimedBackgroundService.cs",
-              "RelativeDocumentMoniker": "Services\\TimedBackgroundService.cs",
-              "ToolTip": "C:\\Projects\\YediTepe\\DS\\Edge Computing\\Edge\\Services\\TimedBackgroundService.cs",
-              "RelativeToolTip": "Services\\TimedBackgroundService.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAACkAAABLAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "IZookeeperService.cs",
+              "DocumentMoniker": "C:\\Projects\\YediTepe\\DS\\Edge Computing\\Edge\\Services\\IZookeeperService.cs",
+              "RelativeDocumentMoniker": "Services\\IZookeeperService.cs",
+              "ToolTip": "C:\\Projects\\YediTepe\\DS\\Edge Computing\\Edge\\Services\\IZookeeperService.cs",
+              "RelativeToolTip": "Services\\IZookeeperService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-08T21:07:51.303Z",
+              "WhenOpened": "2025-01-10T09:55:04.821Z",
               "EditorCaption": ""
             }
           ]
