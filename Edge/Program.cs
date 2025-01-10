@@ -1,8 +1,15 @@
+using Edge.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// Environment deðiþkenlerini ekle
+builder.Configuration.AddEnvironmentVariables();
 
+// Add services to the container.
 builder.Services.AddControllers();
+
+// Add Timer Background service
+builder.Services.AddHostedService<TimedBackgroundService>();
 
 var app = builder.Build();
 
@@ -13,5 +20,8 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+
+
 
 app.Run();

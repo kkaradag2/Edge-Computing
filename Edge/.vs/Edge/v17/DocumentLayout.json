@@ -3,28 +3,16 @@
   "WorkspaceRootPath": "C:\\Projects\\YediTepe\\DS\\Edge Computing\\Edge\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{21A0F71B-48FE-4398-A91F-623E2DED083C}|Edge.csproj|c:\\projects\\yeditepe\\ds\\edge computing\\edge\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{21A0F71B-48FE-4398-A91F-623E2DED083C}|Edge.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{21A0F71B-48FE-4398-A91F-623E2DED083C}|Edge.csproj|c:\\projects\\yeditepe\\ds\\edge computing\\edge\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21A0F71B-48FE-4398-A91F-623E2DED083C}|Edge.csproj|solutionrelative:controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{21A0F71B-48FE-4398-A91F-623E2DED083C}|Edge.csproj|c:\\projects\\yeditepe\\ds\\edge computing\\edge\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21A0F71B-48FE-4398-A91F-623E2DED083C}|Edge.csproj|solutionrelative:weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{21A0F71B-48FE-4398-A91F-623E2DED083C}|Edge.csproj|c:\\projects\\yeditepe\\ds\\edge computing\\edge\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{21A0F71B-48FE-4398-A91F-623E2DED083C}|Edge.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{21A0F71B-48FE-4398-A91F-623E2DED083C}|Edge.csproj|c:\\projects\\yeditepe\\ds\\edge computing\\edge\\edge.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{21A0F71B-48FE-4398-A91F-623E2DED083C}|Edge.csproj|solutionrelative:edge.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+      "AbsoluteMoniker": "D:0:0:{21A0F71B-48FE-4398-A91F-623E2DED083C}|Edge.csproj|c:\\projects\\yeditepe\\ds\\edge computing\\edge\\services\\timedbackgroundservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21A0F71B-48FE-4398-A91F-623E2DED083C}|Edge.csproj|solutionrelative:services\\timedbackgroundservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{21A0F71B-48FE-4398-A91F-623E2DED083C}|Edge.csproj|c:\\projects\\yeditepe\\ds\\edge computing\\edge\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{21A0F71B-48FE-4398-A91F-623E2DED083C}|Edge.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21A0F71B-48FE-4398-A91F-623E2DED083C}|Edge.csproj|c:\\projects\\yeditepe\\ds\\edge computing\\edge\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21A0F71B-48FE-4398-A91F-623E2DED083C}|Edge.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,79 +27,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "C:\\Projects\\YediTepe\\DS\\Edge Computing\\Edge\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "Controllers\\WeatherForecastController.cs",
-              "ToolTip": "C:\\Projects\\YediTepe\\DS\\Edge Computing\\Edge\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "Controllers\\WeatherForecastController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T09:10:59.378Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "WeatherForecast.cs",
-              "DocumentMoniker": "C:\\Projects\\YediTepe\\DS\\Edge Computing\\Edge\\WeatherForecast.cs",
-              "RelativeDocumentMoniker": "WeatherForecast.cs",
-              "ToolTip": "C:\\Projects\\YediTepe\\DS\\Edge Computing\\Edge\\WeatherForecast.cs",
-              "RelativeToolTip": "WeatherForecast.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T09:10:51.937Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Dockerfile",
-              "DocumentMoniker": "C:\\Projects\\YediTepe\\DS\\Edge Computing\\Edge\\Dockerfile",
-              "RelativeDocumentMoniker": "Dockerfile",
-              "ToolTip": "C:\\Projects\\YediTepe\\DS\\Edge Computing\\Edge\\Dockerfile",
-              "RelativeToolTip": "Dockerfile",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB0AAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-01-06T08:57:55.431Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Projects\\YediTepe\\DS\\Edge Computing\\Edge\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
-              "ToolTip": "C:\\Projects\\YediTepe\\DS\\Edge Computing\\Edge\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-06T08:56:06.487Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Projects\\YediTepe\\DS\\Edge Computing\\Edge\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
               "ToolTip": "C:\\Projects\\YediTepe\\DS\\Edge Computing\\Edge\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-06T08:55:25.493Z",
+              "WhenOpened": "2025-01-10T09:11:04.609Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Edge.http",
-              "DocumentMoniker": "C:\\Projects\\YediTepe\\DS\\Edge Computing\\Edge\\Edge.http",
-              "RelativeDocumentMoniker": "Edge.http",
-              "ToolTip": "C:\\Projects\\YediTepe\\DS\\Edge Computing\\Edge\\Edge.http",
-              "RelativeToolTip": "Edge.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-01-06T08:54:34.927Z",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Projects\\YediTepe\\DS\\Edge Computing\\Edge\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Projects\\YediTepe\\DS\\Edge Computing\\Edge\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T21:09:50.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TimedBackgroundService.cs",
+              "DocumentMoniker": "C:\\Projects\\YediTepe\\DS\\Edge Computing\\Edge\\Services\\TimedBackgroundService.cs",
+              "RelativeDocumentMoniker": "Services\\TimedBackgroundService.cs",
+              "ToolTip": "C:\\Projects\\YediTepe\\DS\\Edge Computing\\Edge\\Services\\TimedBackgroundService.cs",
+              "RelativeToolTip": "Services\\TimedBackgroundService.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACkAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T21:07:51.303Z",
               "EditorCaption": ""
             }
           ]

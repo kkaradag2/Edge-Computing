@@ -28,3 +28,6 @@ C:\Projects\YediTepe\DS\Edge Computing\Edge\obj\Debug\net9.0\refint\Edge.dll
 C:\Projects\YediTepe\DS\Edge Computing\Edge\obj\Debug\net9.0\Edge.pdb
 C:\Projects\YediTepe\DS\Edge Computing\Edge\obj\Debug\net9.0\Edge.genruntimeconfig.cache
 C:\Projects\YediTepe\DS\Edge Computing\Edge\obj\Debug\net9.0\ref\Edge.dll
+C:\Projects\YediTepe\DS\Edge Computing\Edge\bin\Debug\net9.0\ZooKeeperNetEx.dll
+C:\Projects\YediTepe\DS\Edge Computing\Edge\obj\Debug\net9.0\Edge.csproj.AssemblyReference.cache
+C:\Projects\YediTepe\DS\Edge Computing\Edge\obj\Debug\net9.0\Edge.csproj.Up2Date

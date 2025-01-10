@@ -45,6 +45,7 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://+:8080 # Container içi port
+      - CONTAINER_NAME=edge1-service
     volumes:
       - ./Edge:/app/release
 
@@ -57,6 +58,7 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://+:8085 # Container içi port
+      - CONTAINER_NAME=edge2-service
     volumes:
       - ./Edge:/app/release
 
@@ -69,6 +71,7 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://+:8090 # Container içi port
+      - CONTAINER_NAME=edge3-service
     volumes:
       - ./Edge:/app/release
 
