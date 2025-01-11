@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "cqJsHEv6DflaNcAXuTBKlKXL3agkQItcW+7oNajbrrk=",
+  "Source": "EdgeMetricsAPI",
+  "BasePath": "_content/EdgeMetricsAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

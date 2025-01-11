@@ -1,0 +1,12 @@
+[
+  {
+    "ContainingType": "EdgeMetricsAPI.Controllers.MetricsController",
+    "Method": "GetMetrics",
+    "RelativePath": "metrics",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

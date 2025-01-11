@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "DcZzWV/ZOW8=",
+  "success": true,
+  "projectFilePath": "C:\\Projects\\YediTepe\\DS\\Edge Computing\\EdgeMetricsAPI\\EdgeMetricsAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\karad\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.21.0\\microsoft.visualstudio.azure.containers.tools.targets.1.21.0.nupkg.sha512",
+    "C:\\Users\\karad\\.nuget\\packages\\zookeepernetex\\3.4.12.4\\zookeepernetex.3.4.12.4.nupkg.sha512"
+  ],
+  "logs": []
+}
