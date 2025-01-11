@@ -1,0 +1,7 @@
+global:
+  scrape_interval: 5s # Her 5 saniyede bir metrik toplanacak
+
+scrape_configs:
+  - job_name: "edgemetricsapi"
+    static_configs:
+      - targets: ["edgemetricsapi:7080"]
