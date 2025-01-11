@@ -62,10 +62,11 @@ namespace Edge.Services
 
             var nodeData = new
             {
-                URL = edgeURL,
-                CPU = cpuUsage,
-                RAM = memoryUsage,
-                Status = status
+                Url = edgeURL,
+                Cpu = cpuUsage,
+                Ram = memoryUsage,
+                Status = status,
+                UpdateAt = DateTime.Now
             };
 
            

@@ -7,6 +7,7 @@ services:
       - "2181:2181"
     environment:
       ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_CLIENT_PORT_ADDRESS: 0.0.0.0
       ZOOKEEPER_SERVER_ID: 1
       ZOOKEEPER_SERVERS: zookeeper1:2888:3888;zookeeper2:2888:3888;zookeeper3:2888:3888
     networks:
@@ -18,6 +19,7 @@ services:
       - "2182:2182"
     environment:
       ZOOKEEPER_CLIENT_PORT: 2182
+      ZOOKEEPER_CLIENT_PORT_ADDRESS: 0.0.0.0
       ZOOKEEPER_SERVER_ID: 2
       ZOOKEEPER_SERVERS: zookeeper1:2888:3888;zookeeper2:2888:3888;zookeeper3:2888:3888
     networks:
@@ -29,6 +31,7 @@ services:
       - "2183:2183"
     environment:
       ZOOKEEPER_CLIENT_PORT: 2183
+      ZOOKEEPER_CLIENT_PORT_ADDRESS: 0.0.0.0
       ZOOKEEPER_SERVER_ID: 3
       ZOOKEEPER_SERVERS: zookeeper1:2888:3888;zoozookeeper2:2888:3888;zookeeper3:2888:3888
     networks:

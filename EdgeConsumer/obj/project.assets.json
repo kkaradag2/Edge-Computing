@@ -1,0 +1,118 @@
+{
+  "version": 3,
+  "targets": {
+    "net9.0": {
+      "ZooKeeperNetEx/3.4.12.4": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/ZooKeeperNetEx.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/ZooKeeperNetEx.dll": {
+            "related": ".xml"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ZooKeeperNetEx/3.4.12.4": {
+      "sha512": "YECtByVSH7TRjQKplwOWiKyanCqYE5eEkGk5YtHJgsnbZ6+p1o0Gvs5RIsZLotiAVa6Niez1BJyKY/RDY/L6zg==",
+      "type": "package",
+      "path": "zookeepernetex/3.4.12.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ZooKeeperNetEx.png",
+        "lib/net461/ZooKeeperNetEx.dll",
+        "lib/net461/ZooKeeperNetEx.xml",
+        "lib/netstandard2.0/ZooKeeperNetEx.dll",
+        "lib/netstandard2.0/ZooKeeperNetEx.xml",
+        "zookeepernetex.3.4.12.4.nupkg.sha512",
+        "zookeepernetex.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net9.0": [
+      "ZooKeeperNetEx >= 3.4.12.4"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\karad\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Projects\\YediTepe\\DS\\Edge Computing\\EdgeConsumer\\EdgeConsumer.csproj",
+      "projectName": "EdgeConsumer",
+      "projectPath": "C:\\Projects\\YediTepe\\DS\\Edge Computing\\EdgeConsumer\\EdgeConsumer.csproj",
+      "packagesPath": "C:\\Users\\karad\\.nuget\\packages\\",
+      "outputPath": "C:\\Projects\\YediTepe\\DS\\Edge Computing\\EdgeConsumer\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\karad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net9.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.100"
+    },
+    "frameworks": {
+      "net9.0": {
+        "targetAlias": "net9.0",
+        "dependencies": {
+          "ZooKeeperNetEx": {
+            "target": "Package",
+            "version": "[3.4.12.4, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

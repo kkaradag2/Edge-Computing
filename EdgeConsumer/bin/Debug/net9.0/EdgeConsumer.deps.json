@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "EdgeConsumer/1.0.0": {
+        "dependencies": {
+          "ZooKeeperNetEx": "3.4.12.4"
+        },
+        "runtime": {
+          "EdgeConsumer.dll": {}
+        }
+      },
+      "ZooKeeperNetEx/3.4.12.4": {
+        "runtime": {
+          "lib/netstandard2.0/ZooKeeperNetEx.dll": {
+            "assemblyVersion": "3.4.12.4",
+            "fileVersion": "3.4.12.4"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EdgeConsumer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ZooKeeperNetEx/3.4.12.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YECtByVSH7TRjQKplwOWiKyanCqYE5eEkGk5YtHJgsnbZ6+p1o0Gvs5RIsZLotiAVa6Niez1BJyKY/RDY/L6zg==",
+      "path": "zookeepernetex/3.4.12.4",
+      "hashPath": "zookeepernetex.3.4.12.4.nupkg.sha512"
+    }
+  }
+}

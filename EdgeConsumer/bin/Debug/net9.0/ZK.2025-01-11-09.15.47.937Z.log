@@ -1,0 +1,42 @@
+[2025-01-11 09:15:50.852 GMT 	ERROR 	DynamicHostProvider 	Failed resolving Host=zookeeper1] 	
+Exc level 0: System.Net.Sockets.SocketException: Bilinen böyle bir ana bilgisayar yok.
+   at System.Net.NameResolutionPal.ProcessResult(SocketError errorCode, GetAddrInfoExContext* context)
+   at System.Net.NameResolutionPal.GetAddressInfoExCallback(Int32 error, Int32 bytes, NativeOverlapped* overlapped)
+--- End of stack trace from previous location ---
+   at System.Net.Dns.<GetAddrInfoWithTelemetryAsync>g__CompleteAsync|34_0[T](Task task, String hostName, Int64 startingTimeStamp)
+   at org.apache.zookeeper.client.DnsResolver.Resolve(HostAndPort hostAndPort) in D:\ZooKeeper\src\csharp\src\ZooKeeperNetEx\zookeeper\client\DnsResolver.cs:line 55
+[2025-01-11 09:15:50.852 GMT 	ERROR 	DynamicHostProvider 	Failed resolving Host=zookeeper3] 	
+Exc level 0: System.Net.Sockets.SocketException: Bilinen böyle bir ana bilgisayar yok.
+   at System.Net.NameResolutionPal.ProcessResult(SocketError errorCode, GetAddrInfoExContext* context)
+   at System.Net.NameResolutionPal.GetAddressInfoExCallback(Int32 error, Int32 bytes, NativeOverlapped* overlapped)
+--- End of stack trace from previous location ---
+   at System.Net.Dns.<GetAddrInfoWithTelemetryAsync>g__CompleteAsync|34_0[T](Task task, String hostName, Int64 startingTimeStamp)
+   at org.apache.zookeeper.client.DnsResolver.Resolve(HostAndPort hostAndPort) in D:\ZooKeeper\src\csharp\src\ZooKeeperNetEx\zookeeper\client\DnsResolver.cs:line 55
+[2025-01-11 09:15:50.852 GMT 	ERROR 	DynamicHostProvider 	Failed resolving Host=zookeeper2] 	
+Exc level 0: System.Net.Sockets.SocketException: Bilinen böyle bir ana bilgisayar yok.
+   at System.Net.NameResolutionPal.ProcessResult(SocketError errorCode, GetAddrInfoExContext* context)
+   at System.Net.NameResolutionPal.GetAddressInfoExCallback(Int32 error, Int32 bytes, NativeOverlapped* overlapped)
+--- End of stack trace from previous location ---
+   at System.Net.Dns.<GetAddrInfoWithTelemetryAsync>g__CompleteAsync|34_0[T](Task task, String hostName, Int64 startingTimeStamp)
+   at org.apache.zookeeper.client.DnsResolver.Resolve(HostAndPort hostAndPort) in D:\ZooKeeper\src\csharp\src\ZooKeeperNetEx\zookeeper\client\DnsResolver.cs:line 55
+[2025-01-11 09:15:54.903 GMT 	ERROR 	DynamicHostProvider 	Failed resolving Host=zookeeper1] 	
+Exc level 0: System.Net.Sockets.SocketException: Bilinen böyle bir ana bilgisayar yok.
+   at System.Net.NameResolutionPal.ProcessResult(SocketError errorCode, GetAddrInfoExContext* context)
+   at System.Net.NameResolutionPal.GetAddressInfoExCallback(Int32 error, Int32 bytes, NativeOverlapped* overlapped)
+--- End of stack trace from previous location ---
+   at System.Net.Dns.<GetAddrInfoWithTelemetryAsync>g__CompleteAsync|34_0[T](Task task, String hostName, Int64 startingTimeStamp)
+   at org.apache.zookeeper.client.DnsResolver.Resolve(HostAndPort hostAndPort) in D:\ZooKeeper\src\csharp\src\ZooKeeperNetEx\zookeeper\client\DnsResolver.cs:line 55
+[2025-01-11 09:15:54.903 GMT 	ERROR 	DynamicHostProvider 	Failed resolving Host=zookeeper2] 	
+Exc level 0: System.Net.Sockets.SocketException: Bilinen böyle bir ana bilgisayar yok.
+   at System.Net.NameResolutionPal.ProcessResult(SocketError errorCode, GetAddrInfoExContext* context)
+   at System.Net.NameResolutionPal.GetAddressInfoExCallback(Int32 error, Int32 bytes, NativeOverlapped* overlapped)
+--- End of stack trace from previous location ---
+   at System.Net.Dns.<GetAddrInfoWithTelemetryAsync>g__CompleteAsync|34_0[T](Task task, String hostName, Int64 startingTimeStamp)
+   at org.apache.zookeeper.client.DnsResolver.Resolve(HostAndPort hostAndPort) in D:\ZooKeeper\src\csharp\src\ZooKeeperNetEx\zookeeper\client\DnsResolver.cs:line 55
+[2025-01-11 09:15:54.903 GMT 	ERROR 	DynamicHostProvider 	Failed resolving Host=zookeeper3] 	
+Exc level 0: System.Net.Sockets.SocketException: Bilinen böyle bir ana bilgisayar yok.
+   at System.Net.NameResolutionPal.ProcessResult(SocketError errorCode, GetAddrInfoExContext* context)
+   at System.Net.NameResolutionPal.GetAddressInfoExCallback(Int32 error, Int32 bytes, NativeOverlapped* overlapped)
+--- End of stack trace from previous location ---
+   at System.Net.Dns.<GetAddrInfoWithTelemetryAsync>g__CompleteAsync|34_0[T](Task task, String hostName, Int64 startingTimeStamp)
+   at org.apache.zookeeper.client.DnsResolver.Resolve(HostAndPort hostAndPort) in D:\ZooKeeper\src\csharp\src\ZooKeeperNetEx\zookeeper\client\DnsResolver.cs:line 55

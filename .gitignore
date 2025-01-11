@@ -3,3 +3,6 @@ Edge/bin/*
 Edge/app/*
 Edge/.vs/*
 Edge/ZK*
+EdgeCosumer/.vs/*
+EdgeCosumer/bin/*
+EdgeCosumer/obj/*
