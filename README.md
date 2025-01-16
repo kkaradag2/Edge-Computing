@@ -84,13 +84,6 @@ Contributions are welcome! Please follow these steps:
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is free to use, modify, and distribute for educational and personal purposes. It is an open resource for learning and experimentation. The LICENSE file in the repository contains additional details.
 
-## Acknowledgments
-
-- Apache ZooKeeper for coordination and node management.
-- Prometheus and Grafana for monitoring and visualization.
-- Docker for containerization.
-
----
 
