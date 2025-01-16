@@ -61,7 +61,7 @@ The system was tested under various scenarios to evaluate:
    - Metrics were collected every 2 seconds and visualized in Grafana.
 
 ![Test Results](/Assets/images/Terminal.png)  
-*Recommended Image: A performance graph showing CPU usage and health status over time.*
+
 
 ## Contributing
 
@@ -84,6 +84,4 @@ Contributions are welcome! Please follow these steps:
 
 ## License
 
-This project is free to use, modify, and distribute for educational and personal purposes. It is an open resource for learning and experimentation. The LICENSE file in the repository contains additional details.
-
-
+This project is free to use, modify, and distribute for educational and personal purposes. It is an open resource for learning and experimentation. 
