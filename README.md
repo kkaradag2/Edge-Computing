@@ -46,8 +46,8 @@ The system is built on an **Apache ZooKeeper-based architecture**, with the foll
 2. **Monitoring**: View real-time CPU and RAM usage for each node in Grafana.
 3. **Client Requests**: Clients query ZooKeeper for healthy nodes and send requests accordingly.
 
-![Node Health Monitoring](#)  
-*Recommended Image: A Grafana dashboard screenshot displaying node health status and resource usage.*
+![Node Health Monitoring](/Assets/images/Graphana.png)  
+
 
 ## Testing and Results
 
@@ -60,7 +60,7 @@ The system was tested under various scenarios to evaluate:
 3. **Real-Time Metrics**:
    - Metrics were collected every 2 seconds and visualized in Grafana.
 
-![Test Results](#)  
+![Test Results](/Assets/images/Terminal.png)  
 *Recommended Image: A performance graph showing CPU usage and health status over time.*
 
 ## Contributing
@@ -94,4 +94,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
-*Note: Replace `#` in image links with the actual file paths after adding diagrams or screenshots.*
