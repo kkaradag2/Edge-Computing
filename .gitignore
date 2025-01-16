@@ -1,8 +1,8 @@
-Edge/obj/*
-Edge/bin/*
-Edge/app/*
-Edge/.vs/*
+Edge/obj/
+Edge/bin/
+Edge/app/
+Edge/.vs/
 Edge/ZK*
-EdgeCosumer/.vs/*
-EdgeCosumer/bin/*
-EdgeCosumer/obj/*
+EdgeCosumer/.vs/
+EdgeCosumer/bin/
+EdgeCosumer/obj/

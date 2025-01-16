@@ -1,105 +1,97 @@
-## **Proje:**
-Event-Driven Edge Node Management System Using ZooKeeper  
+# Event-Driven Edge Node Management System Using ZooKeeper
 
-CSE-532 Dağıtık Sistemler dersi kapsamında terms project olarak geliştirilmektedir.
+This repository contains the source code and documentation for the **Event-Driven Edge Node Management System**, a distributed system designed to optimize edge computing by leveraging Apache ZooKeeper. The system ensures efficient node coordination, fault tolerance, and real-time task distribution in edge environments.
 
-## **Proje Özeti:**
-Bu proje, ZooKeeper kullanarak edge computing ortamlarında gerçek zamanlı bir izleme sistemi geliştirmeyi amaçlamaktadır. Sistem, düğümlerin sağlık durumlarını ve iş yüklerini takip eder, belirli eşiklerin aşılması durumunda veya düğünlerde network kesintisi durumlarında sistem yönlendirmelerini yönetir. Projenin temel hedefleri:
+## Features
 
-- Gerçek Zamanlı İzleme: Edge düğümlerinin sağlık durumlarını ve performanslarını düşük gecikmeyle takip etmek.
-- Hata Yönetimi: ZooKeeper’ın izleme (watch) mekanizmasıyla anormal durumları algılayarak event tetiklemek ve Event Manager üzerinden sıkıntılı Edge noktasını configurasyon versinden çıkararak yeni istekleri almasına izin vermemek. Düzelme durumlarında tekrar configurasyon verisine iyileşen node düğümünü eklemek.
-- Tutarlılık ve Performans Dengesi: Tutarlılığı korurken, ölçeklenebilir ve yüksek performanslı bir çözüm sunmak.
+- **Dynamic Edge Node Management**: Handles node registration, monitoring, and task redistribution dynamically.
+- **Fault Detection and Recovery**: Automatically reallocates tasks to healthy nodes upon failure detection.
+- **Event-Driven Architecture**: Provides faster responses to network changes (e.g., node failures or task redistributions).
+- **Scalable Design**: Maintains performance as the number of nodes grows.
+- **Real-Time Monitoring**: Integrates Prometheus and Grafana for visualizing system metrics.
 
-## **Projenin Uygulanması İçin Planlanan Ortam**
-Docker Desktop üzerinde bir ZooKeeper cluster oluşturulacak. Edge node olarak basit bir uygulama yazılacak. Bu uygulama, 0-100 arasında rastgele oluşturulan CPU ve bellek (memory) bilgilerini ZooKeeper’a gönderecek. ZooKeeper, Event Manager ile birlikte çalışarak belirli eşik değerlerinin (örneğin, %80 CPU ve bellek kullanımı) aşılması durumunda, bu edge düğümüne client isteklerinin yönlendirilmesini engelleyecek. (Configurasyon bilgisi olarak client'a verilmeyecek)
+## Architecture
 
-Client’lar, uygun yapılandırmayı ZooKeeper’dan öğrenecek ve isteklerini uygun edge düğümüne gönderecek. Ayrıca, ZooKeeper’ın watch mekanizması sayesinde durumu düzelen edge düğümünden client’lar haberdar olacak ve bu düğüme tekrar istek göndermeye başlayabilecek.
+The system is built on an **Apache ZooKeeper-based architecture**, with the following components:
 
-Sistem healty durumlarındaki değişimleri  Prometheus  ve Grafana ile geriye dönük izlenebilirlik sağlanacak.
+1. **ZooKeeper Servers**: Manage centralized coordination and node state information.
+2. **Edge Nodes**: Regularly update their health status and resource utilization to ZooKeeper.
+3. **Clients**: Query ZooKeeper for healthy nodes and send requests to the most appropriate one.
+4. **Prometheus & Grafana**: Collect and visualize metrics such as CPU usage, RAM usage, and health status.
+5. **Docker**: All components are containerized for easy deployment.
 
-## **Topoloji**
+![System Architecture](#)  
+*Recommended Image: A diagram showing the interaction between ZooKeeper servers, edge nodes, clients, and monitoring tools.*
 
-<img src="/Assets/images/Topoloji.png" alt="Sistem Topolojisi" width="70%">
+## Setup and Installation
 
-## **Docker-Compose**
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/kkaradag2/Edge-Computing.git
+   cd Edge-Computing
+   ```
+2. Start the system using Docker Compose:
+   ```bash
+   docker-compose up
+   ```
+3. Access Grafana dashboards for real-time monitoring:
+   - Open a browser and navigate to `http://localhost:3000`.
+   - Default credentials:
+     - Username: `admin`
+     - Password: `admin`
 
-ilk önce docker cluster üzerinde 3 nodlu bir zookeeper kurulumu yapılacaktır. Bu kurulumda açıklayıcı komutlar eklenmiştir.
+## Usage
 
-```yaml
-version: '3.8'
+1. **Node Registration**: Edge nodes automatically register themselves in ZooKeeper.
+2. **Monitoring**: View real-time CPU and RAM usage for each node in Grafana.
+3. **Client Requests**: Clients query ZooKeeper for healthy nodes and send requests accordingly.
 
-services:
-  # ZooKeeper'ın birinci düğümü (Leader olabilir)
-  zookeeper1:
-    image: zookeeper  # ZooKeeper Docker imajını kullan
-    container_name: zookeeper1  # Konteyner adı
-    ports:
-      - "2181:2181"  # ZooKeeper'ın dinleyeceği standart port
-    environment:  # ZooKeeper'ın çalışma ortamı değişkenleri
-      ZOO_MY_ID: 1  # Bu düğümün kimliği (1. düğüm)
-      ZOO_SERVERS:  # ZooKeeper cluster'daki tüm düğümler
-        server.1=zookeeper1:2888:3888
-        server.2=zookeeper2:2888:3888
-        server.3=zookeeper3:2888:3888
+![Node Health Monitoring](#)  
+*Recommended Image: A Grafana dashboard screenshot displaying node health status and resource usage.*
 
-  # ZooKeeper'ın ikinci düğümü (Follower olabilir)
-  zookeeper2:
-    image: zookeeper  # ZooKeeper Docker imajını kullan
-    container_name: zookeeper2  # Konteyner adı
-    environment:  # Çalışma ortamı değişkenleri
-      ZOO_MY_ID: 2  # Bu düğümün kimliği (2. düğüm)
-      ZOO_SERVERS:  # ZooKeeper cluster'daki tüm düğümler
-        server.1=zookeeper1:2888:3888
-        server.2=zookeeper2:2888:3888
-        server.3=zookeeper3:2888:3888
+## Testing and Results
 
-  # ZooKeeper'ın üçüncü düğümü (Follower olabilir)
-  zookeeper3:
-    image: zookeeper  # ZooKeeper Docker imajını kullan
-    container_name: zookeeper3  # Konteyner adı
-    environment:  # Çalışma ortamı değişkenleri
-      ZOO_MY_ID: 3  # Bu düğümün kimliği (3. düğüm)
-      ZOO_SERVERS:  # ZooKeeper cluster'daki tüm düğümler
-        server.1=zookeeper1:2888:3888
-        server.2=zookeeper2:2888:3888
-        server.3=zookeeper3:2888:3888
-```
-- **ZOO_MY_ID:** Her ZooKeeper düğümünün kimliğini belirtir. Bu, cluster'daki rolleri (leader veya follower) tanımlamak için kullanılır.
-- **ZOO_SERVERS:** Cluster içindeki diğer ZooKeeper düğümlerini tanımlar. Her düğümün adresi ve portları burada listelenir.
-- **2888:** Diğer düğümlerle iletişim için kullanılır.
-- **3888:** Lider seçimi gibi yüksek öncelikli işlemler için kullanılır.
-- **2181 Portu:** ZooKeeper'ın istemci bağlantılarını dinlediği standart porttur.
-- **Container Adı:** Her bir ZooKeeper düğümü için farklı bir container adı tanımlanır.
+The system was tested under various scenarios to evaluate:
 
-compose.yml dosyasının olduğu folder'da aşağıdaki komut çalıştırılarak zookeeper kurulumu sağlanır.
-```bash
-docker-compose up -d
-```
-Kurulum tamamlandığında aşağıdaki gibi zookeeper nodlarının kurulduğu görülmelidir.
+1. **Health Status Management**:
+   - Nodes exceeding CPU (80%) or RAM (90%) thresholds were marked as unhealthy.
+2. **Fault Recovery**:
+   - Clients were able to bypass unhealthy nodes and access healthy ones.
+3. **Real-Time Metrics**:
+   - Metrics were collected every 2 seconds and visualized in Grafana.
 
-<img src="/Assets/images/compose-up.png" alt="compose up" width="80%">
+![Test Results](#)  
+*Recommended Image: A performance graph showing CPU usage and health status over time.*
 
-## **Edge Projesinin Eklenmesi ve Yapılandırılması**
-Proje kapsamında, bir temel seviyede bir .NET Core API uygulaması ileride Edge düğümlerini taklit edebilmesi için çözüme eklendi. Bu uygulama, dağıtık mimarilerde düğüm bazlı hizmetleri simüle etmek için tasarlandı ve Docker tabanlı bir ortamda çalıştırılacak şekilde yapılandırıldı.
+## Contributing
 
-## Yapılan Çalışmalar
+Contributions are welcome! Please follow these steps:
 
-- Proje Eklemesi:
-Edge düğümlerini temsil etmek üzere yeni bir API projesi oluşturuldu. Temel seviyede bir .NET Core projesi olduğu için havadurumu servisini veren bir API ile birlikte geldi. Bu projeye ileride zookeper nodlarına CPU ve RAM değerlerini gönderecek yapı kurulacak. Bu aşamada sadece Docker desktop üzerinde 4 adet node olarak çalışabilecek bir kod eklemiş oldu.
+1. Fork the repository.
+2. Create a new branch:
+   ```bash
+   git checkout -b feature/your-feature
+   ```
+3. Commit your changes:
+   ```bash
+   git commit -m "Add your message"
+   ```
+4. Push to the branch:
+   ```bash
+   git push origin feature/your-feature
+   ```
+5. Open a pull request.
 
-- Dockerfile Düzenlemeleri:
-Projenin konteynerize edilmesi için gerekli olan Dockerfile oluşturuldu ve yapılandırıldı.
-Dockerfile, uygulamanın bağımlılıklarını çözerek gerekli derlemeleri tamamladıktan sonra, çalıştırılabilir bir imaj oluşturacak şekilde ayarlandı.
+## License
 
-- Docker Compose Entegrasyonu:
-Docker Compose dosyasına gerekli servis tanımlamaları eklendi.
-Projenin birden fazla düğüm olarak çalıştırılabilmesi için bağımsız portlar ve ortam değişkenleri tanımlandı.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-- Port Ayarları:
-Uygulama, Docker üzerinden aşağıdaki portlar üzerinden hizmet verecek şekilde ayarlandı:
-8080, 8085, 8090, 8095
-Her bir port, farklı bir düğümün hizmet vermesi için izole edildi ve böylece çoklu node çalıştırma senaryoları desteklendi.
+## Acknowledgments
 
-Yapılan bu düzenlemeler sayesinde, Edge düğümlerini temsil eden API uygulaması, hem yerel geliştirme ortamlarında hem de Docker tabanlı üretim sistemlerinde kolayca çalıştırılabilir hale geldi. Bu yapılandırma, farklı senaryolar için esnek bir test ortamı sunmakta ve dağıtık sistemlerin mimarisini simüle etme olanağı sağlamaktadır.
+- Apache ZooKeeper for coordination and node management.
+- Prometheus and Grafana for monitoring and visualization.
+- Docker for containerization.
 
-<img src="/Assets/images/Edges.png" alt="compose up" width="80%">
+---
+
+*Note: Replace `#` in image links with the actual file paths after adding diagrams or screenshots.*
