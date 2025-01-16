@@ -20,8 +20,8 @@ The system is built on an **Apache ZooKeeper-based architecture**, with the foll
 4. **Prometheus & Grafana**: Collect and visualize metrics such as CPU usage, RAM usage, and health status.
 5. **Docker**: All components are containerized for easy deployment.
 
-![System Architecture](#)  
-*Recommended Image: A diagram showing the interaction between ZooKeeper servers, edge nodes, clients, and monitoring tools.*
+![System Architecture](/Assets/images/Topoloji.png)  
+
 
 ## Setup and Installation
 
